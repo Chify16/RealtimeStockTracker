@@ -1,0 +1,16 @@
+2026-10-26 18:25:23,780 - ERROR - Error fetching data for 0: 401 Client Error: Unauthorized for url: https://alpha-vantage.p.rapidapi.com/query?symbol=AAPL&function=TIME_SERIES_INTRADAY&output_size=compact&interval=5min&datatype=json
+2026-10-26 18:34:58,501 - ERROR - Error fetching data for 0: 401 Client Error: Unauthorized for url: https://alpha-vantage.p.rapidapi.com/query?symbol=AAPL&function=TIME_SERIES_INTRADAY&output_size=compact&interval=5min&datatype=json
+2026-10-26 18:36:42,640 - ERROR - Error fetching data for 0: 401 Client Error: Unauthorized for url: https://alpha-vantage.p.rapidapi.com/query?symbol=AAPL&function=TIME_SERIES_INTRADAY&output_size=compact&interval=5min&datatype=json
+2026-10-26 18:44:05,296 - ERROR - Error fetching data for 0: 401 Client Error: Unauthorized for url: https://alpha-vantage.p.rapidapi.com/query?symbol=AAPL&function=TIME_SERIES_INTRADAY&output_size=compact&interval=5min&datatype=json
+2026-10-26 18:49:55,098 - ERROR - Error fetching data for 0: 401 Client Error: Unauthorized for url: https://alpha-vantage.p.rapidapi.com/query?symbol=AAPL&function=TIME_SERIES_INTRADAY&output_size=compact&interval=5min&datatype=json
+2026-10-26 18:53:59,446 - ERROR - Error fetching data for 0: 401 Client Error: Unauthorized for url: https://alpha-vantage.p.rapidapi.com/query?symbol=AAPL&function=TIME_SERIES_INTRADAY&output_size=compact&interval=5min&datatype=json
+2026-10-26 18:57:17,173 - ERROR - Error fetching data for 0: 401 Client Error: Unauthorized for url: https://alpha-vantage.p.rapidapi.com/query?symbol=AAPL&function=TIME_SERIES_INTRADAY&output_size=compact&interval=5min&datatype=json
+2026-10-26 19:08:23,248 - ERROR - Error fetching data for 0: 401 Client Error: Unauthorized for url: https://alpha-vantage.p.rapidapi.com/query?symbol=AAPL&function=TIME_SERIES_INTRADAY&output_size=compact&interval=5min&datatype=json
+2026-10-26 19:10:01,798 - ERROR - Error fetching data for 0: 401 Client Error: Unauthorized for url: https://alpha-vantage.p.rapidapi.com/query?symbol=AAPL&function=TIME_SERIES_INTRADAY&output_size=compact&interval=5min&datatype=json
+2026-10-26 19:13:43,216 - ERROR - Error fetching data for 0: 401 Client Error: Unauthorized for url: https://alpha-vantage.p.rapidapi.com/query?symbol=AAPL&function=TIME_SERIES_INTRADAY&output_size=compact&interval=5min&datatype=json
+2026-10-26 19:19:51,798 - ERROR - Error fetching data for 0: 401 Client Error: Unauthorized for url: https://alpha-vantage.p.rapidapi.com/query?symbol=AAPL&function=TIME_SERIES_INTRADAY&outputsize=compact&interval=5min&datatype=json
+2026-10-26 19:31:46,504 - INFO - Successfully fetched data for AAPL
+2026-10-26 19:31:46,928 - INFO - Successfully fetched data for GOOGL
+2026-10-26 19:31:47,311 - INFO - Successfully fetched data for MSFT
+2026-10-26 19:31:47,623 - INFO - Successfully fetched data for AMZN
+2026-10-26 19:31:47,986 - INFO - Successfully fetched data for TSLA
