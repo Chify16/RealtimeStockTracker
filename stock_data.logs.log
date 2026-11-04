@@ -14,3 +14,409 @@
 2026-10-26 19:31:47,311 - INFO - Successfully fetched data for MSFT
 2026-10-26 19:31:47,623 - INFO - Successfully fetched data for AMZN
 2026-10-26 19:31:47,986 - INFO - Successfully fetched data for TSLA
+2026-11-04 12:54:08,786 - INFO - Attempting bootstrap to bootstrap-0 at localhost:9092 (rack None)
+2026-11-04 12:54:08,786 - INFO - Initializing connection for node_id bootstrap-0 at localhost:9092 (rack=None)
+2026-11-04 12:54:08,793 - INFO - <KafkaTCPTransport [::1:9092<-63757]>: connected to <socket.socket fd=352, family=AddressFamily.AF_INET6, type=SocketKind.SOCK_STREAM, proto=0, laddr=('::1', 63757, 0, 0), raddr=('::1', 9092, 0, 0)>
+2026-11-04 12:54:09,205 - INFO - <KafkaConnection node_id=bootstrap-0 host=[::1:9092<-63757] broker_version=unknown (initializing)>: Broker version identified as 3.3
+2026-11-04 12:54:09,205 - INFO - <KafkaConnection node_id=bootstrap-0 host=[::1:9092<-63757] broker_version=(3, 3) (connected)>: Connected
+2026-11-04 12:54:09,214 - INFO - Updated metadata: ClusterMetadata(brokers: 1, topics: 0, coordinators: 0)
+2026-11-04 12:54:09,214 - INFO - Bootstrap complete: ClusterMetadata(brokers: 1, topics: 0, coordinators: 0)
+2026-11-04 12:54:09,215 - INFO - Closing bootstrap connection bootstrap-0
+2026-11-04 12:54:09,215 - INFO - <KafkaTCPTransport [::1:9092<-63757]>: Closing transport
+2026-11-04 12:54:09,215 - INFO - <KafkaConnection node_id=bootstrap-0 broker_version=(3, 3) (disconnected)>: Connection closed
+2026-11-04 12:54:09,215 - INFO - Starting metadata refresh loop
+2026-11-04 12:54:09,216 - INFO - <KafkaProducer client_id=kafka-python-producer-1 transactional_id=None>: Instantiated an idempotent producer.
+2026-11-04 12:54:09,217 - INFO - ProducerId set to -1 with epoch -1
+2026-11-04 12:54:09,218 - INFO - Initializing connection for node_id 1 at kafka:9092 (rack=None)
+2026-11-04 12:54:10,071 - INFO - Successfully fetched data for AAPL
+2026-11-04 12:54:10,410 - INFO - Successfully fetched data for GOOGL
+2026-11-04 12:54:11,011 - INFO - Successfully fetched data for MSFT
+2026-11-04 12:54:11,339 - INFO - Successfully fetched data for AMZN
+2026-11-04 12:54:11,602 - INFO - Successfully fetched data for TSLA
+2026-11-04 12:54:11,921 - WARNING - DNS lookup failed for kafka:9092, gaierror(11001, 'getaddrinfo failed')
+2026-11-04 12:54:11,922 - ERROR - Connection failed: KafkaConnectionError: DNS Resolution failure
+2026-11-04 12:54:11,922 - ERROR - <KafkaConnection node_id=1 broker_version=(3, 3) (disconnected)>: Connection lost: KafkaConnectionError: DNS Resolution failure
+2026-11-04 12:54:11,922 - WARNING - Task <kafka.net.selector.Task object at 0x0000015FE3CC2380> ran for 2.703s (>0.100s threshold). It is blocking the event loop -- likely a tight sync loop inside a coroutine. Other pollers will time out.
+2026-11-04 12:54:11,922 - WARNING - <Sender client_id=kafka-python-producer-1 transactional_id=None>: Got an exception when trying to find a node to send a transactional request to. Going to back off and retry: KafkaConnectionError: Node 1 not ready after 30000 ms
+2026-11-04 12:54:11,922 - WARNING - No node available for metadata refresh - backoff/retry
+2026-11-04 12:54:11,982 - INFO - Initializing connection for node_id 1 at kafka:9092 (rack=None)
+2026-11-04 12:54:14,666 - WARNING - DNS lookup failed for kafka:9092, gaierror(11001, 'getaddrinfo failed')
+2026-11-04 12:54:14,666 - ERROR - Connection failed: KafkaConnectionError: DNS Resolution failure
+2026-11-04 12:54:14,666 - ERROR - <KafkaConnection node_id=1 broker_version=(3, 3) (disconnected)>: Connection lost: KafkaConnectionError: DNS Resolution failure
+2026-11-04 12:54:14,667 - WARNING - Task <kafka.net.selector.Task object at 0x0000015FE3CC1750> ran for 2.687s (>0.100s threshold). It is blocking the event loop -- likely a tight sync loop inside a coroutine. Other pollers will time out.
+2026-11-04 12:54:14,667 - ERROR - Metadata refresh: failed KafkaConnectionError: DNS Resolution failure
+2026-11-04 12:54:14,776 - INFO - Initializing connection for node_id 1 at kafka:9092 (rack=None)
+2026-11-04 12:54:17,460 - WARNING - DNS lookup failed for kafka:9092, gaierror(11001, 'getaddrinfo failed')
+2026-11-04 12:54:17,461 - ERROR - Connection failed: KafkaConnectionError: DNS Resolution failure
+2026-11-04 12:54:17,461 - ERROR - <KafkaConnection node_id=1 broker_version=(3, 3) (disconnected)>: Connection lost: KafkaConnectionError: DNS Resolution failure
+2026-11-04 12:54:17,461 - WARNING - Task <kafka.net.selector.Task object at 0x0000015FE3CC2560> ran for 2.687s (>0.100s threshold). It is blocking the event loop -- likely a tight sync loop inside a coroutine. Other pollers will time out.
+2026-11-04 12:54:17,461 - WARNING - <Sender client_id=kafka-python-producer-1 transactional_id=None>: Got an exception when trying to find a node to send a transactional request to. Going to back off and retry: KafkaConnectionError: Node 1 not ready after 30000 ms
+2026-11-04 12:54:17,462 - ERROR - Metadata refresh: failed KafkaConnectionError: DNS Resolution failure
+2026-11-04 12:54:17,570 - WARNING - No node available for metadata refresh - backoff/retry
+2026-11-04 12:54:17,633 - WARNING - No node available for metadata refresh - backoff/retry
+2026-11-04 12:54:17,679 - INFO - Initializing connection for node_id 1 at kafka:9092 (rack=None)
+2026-11-04 12:54:20,389 - WARNING - DNS lookup failed for kafka:9092, gaierror(11001, 'getaddrinfo failed')
+2026-11-04 12:54:20,389 - ERROR - Connection failed: KafkaConnectionError: DNS Resolution failure
+2026-11-04 12:54:20,390 - ERROR - <KafkaConnection node_id=1 broker_version=(3, 3) (disconnected)>: Connection lost: KafkaConnectionError: DNS Resolution failure
+2026-11-04 12:54:20,390 - WARNING - Task <kafka.net.selector.Task object at 0x0000015FE3CC3580> ran for 2.703s (>0.100s threshold). It is blocking the event loop -- likely a tight sync loop inside a coroutine. Other pollers will time out.
+2026-11-04 12:54:20,391 - WARNING - <Sender client_id=kafka-python-producer-1 transactional_id=None>: Got an exception when trying to find a node to send a transactional request to. Going to back off and retry: KafkaConnectionError: Node 1 not ready after 30000 ms
+2026-11-04 12:54:20,391 - WARNING - No node available for metadata refresh - backoff/retry
+2026-11-04 12:54:20,589 - WARNING - No node available for metadata refresh - backoff/retry
+2026-11-04 12:54:20,935 - INFO - Initializing connection for node_id 1 at kafka:9092 (rack=None)
+2026-11-04 12:54:23,635 - WARNING - DNS lookup failed for kafka:9092, gaierror(11001, 'getaddrinfo failed')
+2026-11-04 12:54:23,635 - ERROR - Connection failed: KafkaConnectionError: DNS Resolution failure
+2026-11-04 12:54:23,635 - ERROR - <KafkaConnection node_id=1 broker_version=(3, 3) (disconnected)>: Connection lost: KafkaConnectionError: DNS Resolution failure
+2026-11-04 12:54:23,635 - WARNING - Task <kafka.net.selector.Task object at 0x0000015FE3CC2350> ran for 2.703s (>0.100s threshold). It is blocking the event loop -- likely a tight sync loop inside a coroutine. Other pollers will time out.
+2026-11-04 12:54:23,636 - WARNING - <Sender client_id=kafka-python-producer-1 transactional_id=None>: Got an exception when trying to find a node to send a transactional request to. Going to back off and retry: KafkaConnectionError: Node 1 not ready after 30000 ms
+2026-11-04 12:54:23,637 - WARNING - No node available for metadata refresh - backoff/retry
+2026-11-04 12:54:24,330 - INFO - Initializing connection for node_id 1 at kafka:9092 (rack=None)
+2026-11-04 12:54:27,056 - WARNING - DNS lookup failed for kafka:9092, gaierror(11001, 'getaddrinfo failed')
+2026-11-04 12:54:27,057 - ERROR - Connection failed: KafkaConnectionError: DNS Resolution failure
+2026-11-04 12:54:27,057 - ERROR - <KafkaConnection node_id=1 broker_version=(3, 3) (disconnected)>: Connection lost: KafkaConnectionError: DNS Resolution failure
+2026-11-04 12:54:27,057 - WARNING - Task <kafka.net.selector.Task object at 0x0000015FE3CC1BA0> ran for 2.719s (>0.100s threshold). It is blocking the event loop -- likely a tight sync loop inside a coroutine. Other pollers will time out.
+2026-11-04 12:54:27,058 - ERROR - Metadata refresh: failed KafkaConnectionError: DNS Resolution failure
+2026-11-04 12:54:27,166 - WARNING - No node available for metadata refresh - backoff/retry
+2026-11-04 12:54:27,227 - WARNING - No node available for metadata refresh - backoff/retry
+2026-11-04 12:54:27,319 - WARNING - No node available for metadata refresh - backoff/retry
+2026-11-04 12:54:27,511 - WARNING - No node available for metadata refresh - backoff/retry
+2026-11-04 12:54:27,869 - WARNING - No node available for metadata refresh - backoff/retry
+2026-11-04 12:54:28,537 - WARNING - No node available for metadata refresh - backoff/retry
+2026-11-04 12:54:28,584 - INFO - Initializing connection for node_id 1 at kafka:9092 (rack=None)
+2026-11-04 12:54:31,291 - WARNING - DNS lookup failed for kafka:9092, gaierror(11001, 'getaddrinfo failed')
+2026-11-04 12:54:31,291 - ERROR - Connection failed: KafkaConnectionError: DNS Resolution failure
+2026-11-04 12:54:31,292 - ERROR - <KafkaConnection node_id=1 broker_version=(3, 3) (disconnected)>: Connection lost: KafkaConnectionError: DNS Resolution failure
+2026-11-04 12:54:31,292 - WARNING - Task <kafka.net.selector.Task object at 0x0000015FE3CC1BD0> ran for 2.703s (>0.100s threshold). It is blocking the event loop -- likely a tight sync loop inside a coroutine. Other pollers will time out.
+2026-11-04 12:54:31,292 - WARNING - <Sender client_id=kafka-python-producer-1 transactional_id=None>: Got an exception when trying to find a node to send a transactional request to. Going to back off and retry: KafkaConnectionError: Node 1 not ready after 30000 ms
+2026-11-04 12:54:31,293 - WARNING - No node available for metadata refresh - backoff/retry
+2026-11-04 12:54:34,249 - INFO - Initializing connection for node_id 1 at kafka:9092 (rack=None)
+2026-11-04 12:54:36,941 - WARNING - DNS lookup failed for kafka:9092, gaierror(11001, 'getaddrinfo failed')
+2026-11-04 12:54:36,941 - ERROR - Connection failed: KafkaConnectionError: DNS Resolution failure
+2026-11-04 12:54:36,941 - ERROR - <KafkaConnection node_id=1 broker_version=(3, 3) (disconnected)>: Connection lost: KafkaConnectionError: DNS Resolution failure
+2026-11-04 12:54:36,941 - WARNING - Task <kafka.net.selector.Task object at 0x0000015FE3CC36D0> ran for 2.703s (>0.100s threshold). It is blocking the event loop -- likely a tight sync loop inside a coroutine. Other pollers will time out.
+2026-11-04 12:54:36,941 - WARNING - <Sender client_id=kafka-python-producer-1 transactional_id=None>: Got an exception when trying to find a node to send a transactional request to. Going to back off and retry: KafkaConnectionError: Node 1 not ready after 30000 ms
+2026-11-04 12:54:36,941 - WARNING - No node available for metadata refresh - backoff/retry
+2026-11-04 12:54:43,697 - WARNING - No node available for metadata refresh - backoff/retry
+2026-11-04 12:54:43,760 - INFO - Initializing connection for node_id 1 at kafka:9092 (rack=None)
+2026-11-04 12:54:46,473 - WARNING - DNS lookup failed for kafka:9092, gaierror(11001, 'getaddrinfo failed')
+2026-11-04 12:54:46,473 - ERROR - Connection failed: KafkaConnectionError: DNS Resolution failure
+2026-11-04 12:54:46,473 - ERROR - <KafkaConnection node_id=1 broker_version=(3, 3) (disconnected)>: Connection lost: KafkaConnectionError: DNS Resolution failure
+2026-11-04 12:54:46,474 - WARNING - Task <kafka.net.selector.Task object at 0x0000015FE3CC3550> ran for 2.719s (>0.100s threshold). It is blocking the event loop -- likely a tight sync loop inside a coroutine. Other pollers will time out.
+2026-11-04 12:54:46,474 - WARNING - <Sender client_id=kafka-python-producer-1 transactional_id=None>: Got an exception when trying to find a node to send a transactional request to. Going to back off and retry: KafkaConnectionError: Node 1 not ready after 30000 ms
+2026-11-04 12:54:56,938 - WARNING - No node available for metadata refresh - backoff/retry
+2026-11-04 12:54:58,779 - INFO - Initializing connection for node_id 1 at kafka:9092 (rack=None)
+2026-11-04 12:55:01,495 - WARNING - DNS lookup failed for kafka:9092, gaierror(11001, 'getaddrinfo failed')
+2026-11-04 12:55:01,496 - ERROR - Connection failed: KafkaConnectionError: DNS Resolution failure
+2026-11-04 12:55:01,496 - ERROR - <KafkaConnection node_id=1 broker_version=(3, 3) (disconnected)>: Connection lost: KafkaConnectionError: DNS Resolution failure
+2026-11-04 12:55:01,496 - WARNING - Task <kafka.net.selector.Task object at 0x0000015FE3CC3220> ran for 2.719s (>0.100s threshold). It is blocking the event loop -- likely a tight sync loop inside a coroutine. Other pollers will time out.
+2026-11-04 12:55:01,496 - WARNING - <Sender client_id=kafka-python-producer-1 transactional_id=None>: Got an exception when trying to find a node to send a transactional request to. Going to back off and retry: KafkaConnectionError: Node 1 not ready after 30000 ms
+2026-11-04 12:55:11,776 - INFO - Stopping metadata refresh loop
+2026-11-04 13:00:30,568 - INFO - Attempting bootstrap to bootstrap-0 at localhost:9092 (rack None)
+2026-11-04 13:00:30,569 - INFO - Initializing connection for node_id bootstrap-0 at localhost:9092 (rack=None)
+2026-11-04 13:00:30,575 - INFO - <KafkaTCPTransport [::1:9092<-58632]>: connected to <socket.socket fd=804, family=AddressFamily.AF_INET6, type=SocketKind.SOCK_STREAM, proto=0, laddr=('::1', 58632, 0, 0), raddr=('::1', 9092, 0, 0)>
+2026-11-04 13:00:30,598 - INFO - <KafkaConnection node_id=bootstrap-0 host=[::1:9092<-58632] broker_version=unknown (initializing)>: Broker version identified as 3.3
+2026-11-04 13:00:30,599 - INFO - <KafkaConnection node_id=bootstrap-0 host=[::1:9092<-58632] broker_version=(3, 3) (connected)>: Connected
+2026-11-04 13:00:30,607 - INFO - Updated metadata: ClusterMetadata(brokers: 1, topics: 0, coordinators: 0)
+2026-11-04 13:00:30,607 - INFO - Bootstrap complete: ClusterMetadata(brokers: 1, topics: 0, coordinators: 0)
+2026-11-04 13:00:30,607 - INFO - Closing bootstrap connection bootstrap-0
+2026-11-04 13:00:30,607 - INFO - <KafkaTCPTransport [::1:9092<-58632]>: Closing transport
+2026-11-04 13:00:30,607 - INFO - <KafkaConnection node_id=bootstrap-0 broker_version=(3, 3) (disconnected)>: Connection closed
+2026-11-04 13:00:30,608 - INFO - Starting metadata refresh loop
+2026-11-04 13:00:30,608 - INFO - <KafkaProducer client_id=kafka-python-producer-1 transactional_id=None>: Instantiated an idempotent producer.
+2026-11-04 13:00:30,612 - INFO - ProducerId set to -1 with epoch -1
+2026-11-04 13:00:30,613 - INFO - Initializing connection for node_id 1 at kafka:9092 (rack=None)
+2026-11-04 13:00:31,018 - INFO - Successfully fetched data for AAPL
+2026-11-04 13:00:31,425 - INFO - Successfully fetched data for GOOGL
+2026-11-04 13:00:31,836 - INFO - Successfully fetched data for MSFT
+2026-11-04 13:00:32,174 - INFO - Successfully fetched data for AMZN
+2026-11-04 13:00:32,427 - INFO - Successfully fetched data for TSLA
+2026-11-04 13:00:33,353 - WARNING - DNS lookup failed for kafka:9092, gaierror(11001, 'getaddrinfo failed')
+2026-11-04 13:00:33,353 - ERROR - Connection failed: KafkaConnectionError: DNS Resolution failure
+2026-11-04 13:00:33,353 - ERROR - <KafkaConnection node_id=1 broker_version=(3, 3) (disconnected)>: Connection lost: KafkaConnectionError: DNS Resolution failure
+2026-11-04 13:00:33,354 - WARNING - Task <kafka.net.selector.Task object at 0x00000264A99FE3B0> ran for 2.734s (>0.100s threshold). It is blocking the event loop -- likely a tight sync loop inside a coroutine. Other pollers will time out.
+2026-11-04 13:00:33,354 - WARNING - <Sender client_id=kafka-python-producer-1 transactional_id=None>: Got an exception when trying to find a node to send a transactional request to. Going to back off and retry: KafkaConnectionError: Node 1 not ready after 30000 ms
+2026-11-04 13:00:33,354 - WARNING - No node available for metadata refresh - backoff/retry
+2026-11-04 13:00:33,399 - INFO - Initializing connection for node_id 1 at kafka:9092 (rack=None)
+2026-11-04 13:00:36,082 - WARNING - DNS lookup failed for kafka:9092, gaierror(11001, 'getaddrinfo failed')
+2026-11-04 13:00:36,083 - ERROR - Connection failed: KafkaConnectionError: DNS Resolution failure
+2026-11-04 13:00:36,083 - ERROR - <KafkaConnection node_id=1 broker_version=(3, 3) (disconnected)>: Connection lost: KafkaConnectionError: DNS Resolution failure
+2026-11-04 13:00:36,083 - WARNING - Task <kafka.net.selector.Task object at 0x00000264A99FD780> ran for 2.687s (>0.100s threshold). It is blocking the event loop -- likely a tight sync loop inside a coroutine. Other pollers will time out.
+2026-11-04 13:00:36,084 - ERROR - Metadata refresh: failed KafkaConnectionError: DNS Resolution failure
+2026-11-04 13:00:36,192 - WARNING - No node available for metadata refresh - backoff/retry
+2026-11-04 13:00:36,254 - INFO - Initializing connection for node_id 1 at kafka:9092 (rack=None)
+2026-11-04 13:00:38,938 - WARNING - DNS lookup failed for kafka:9092, gaierror(11001, 'getaddrinfo failed')
+2026-11-04 13:00:38,938 - ERROR - Connection failed: KafkaConnectionError: DNS Resolution failure
+2026-11-04 13:00:38,938 - ERROR - <KafkaConnection node_id=1 broker_version=(3, 3) (disconnected)>: Connection lost: KafkaConnectionError: DNS Resolution failure
+2026-11-04 13:00:38,939 - WARNING - Task <kafka.net.selector.Task object at 0x00000264A99FDFF0> ran for 2.688s (>0.100s threshold). It is blocking the event loop -- likely a tight sync loop inside a coroutine. Other pollers will time out.
+2026-11-04 13:00:38,939 - ERROR - Metadata refresh: failed KafkaConnectionError: DNS Resolution failure
+2026-11-04 13:00:39,063 - WARNING - No node available for metadata refresh - backoff/retry
+2026-11-04 13:00:39,124 - WARNING - No node available for metadata refresh - backoff/retry
+2026-11-04 13:00:39,172 - INFO - Initializing connection for node_id 1 at kafka:9092 (rack=None)
+2026-11-04 13:00:41,883 - WARNING - DNS lookup failed for kafka:9092, gaierror(11001, 'getaddrinfo failed')
+2026-11-04 13:00:41,884 - ERROR - Connection failed: KafkaConnectionError: DNS Resolution failure
+2026-11-04 13:00:41,884 - ERROR - <KafkaConnection node_id=1 broker_version=(3, 3) (disconnected)>: Connection lost: KafkaConnectionError: DNS Resolution failure
+2026-11-04 13:00:41,884 - WARNING - Task <kafka.net.selector.Task object at 0x00000264A99FF5B0> ran for 2.719s (>0.100s threshold). It is blocking the event loop -- likely a tight sync loop inside a coroutine. Other pollers will time out.
+2026-11-04 13:00:41,884 - WARNING - <Sender client_id=kafka-python-producer-1 transactional_id=None>: Got an exception when trying to find a node to send a transactional request to. Going to back off and retry: KafkaConnectionError: Node 1 not ready after 30000 ms
+2026-11-04 13:00:41,885 - WARNING - No node available for metadata refresh - backoff/retry
+2026-11-04 13:00:42,069 - WARNING - No node available for metadata refresh - backoff/retry
+2026-11-04 13:00:42,211 - INFO - Initializing connection for node_id 1 at kafka:9092 (rack=None)
+2026-11-04 13:00:44,901 - WARNING - DNS lookup failed for kafka:9092, gaierror(11001, 'getaddrinfo failed')
+2026-11-04 13:00:44,901 - ERROR - Connection failed: KafkaConnectionError: DNS Resolution failure
+2026-11-04 13:00:44,902 - ERROR - <KafkaConnection node_id=1 broker_version=(3, 3) (disconnected)>: Connection lost: KafkaConnectionError: DNS Resolution failure
+2026-11-04 13:00:44,902 - WARNING - Task <kafka.net.selector.Task object at 0x00000264A99FE470> ran for 2.688s (>0.100s threshold). It is blocking the event loop -- likely a tight sync loop inside a coroutine. Other pollers will time out.
+2026-11-04 13:00:44,902 - WARNING - <Sender client_id=kafka-python-producer-1 transactional_id=None>: Got an exception when trying to find a node to send a transactional request to. Going to back off and retry: KafkaConnectionError: Node 1 not ready after 30000 ms
+2026-11-04 13:00:44,902 - WARNING - No node available for metadata refresh - backoff/retry
+2026-11-04 13:00:45,779 - INFO - Initializing connection for node_id 1 at kafka:9092 (rack=None)
+2026-11-04 13:00:48,466 - WARNING - DNS lookup failed for kafka:9092, gaierror(11001, 'getaddrinfo failed')
+2026-11-04 13:00:48,466 - ERROR - Connection failed: KafkaConnectionError: DNS Resolution failure
+2026-11-04 13:00:48,468 - ERROR - <KafkaConnection node_id=1 broker_version=(3, 3) (disconnected)>: Connection lost: KafkaConnectionError: DNS Resolution failure
+2026-11-04 13:00:48,468 - WARNING - Task <kafka.net.selector.Task object at 0x00000264A99FEBC0> ran for 2.687s (>0.100s threshold). It is blocking the event loop -- likely a tight sync loop inside a coroutine. Other pollers will time out.
+2026-11-04 13:00:48,468 - WARNING - <Sender client_id=kafka-python-producer-1 transactional_id=None>: Got an exception when trying to find a node to send a transactional request to. Going to back off and retry: KafkaConnectionError: Node 1 not ready after 30000 ms
+2026-11-04 13:00:48,469 - WARNING - No node available for metadata refresh - backoff/retry
+2026-11-04 13:00:49,994 - INFO - Initializing connection for node_id 1 at kafka:9092 (rack=None)
+2026-11-04 13:00:52,697 - WARNING - DNS lookup failed for kafka:9092, gaierror(11001, 'getaddrinfo failed')
+2026-11-04 13:00:52,697 - ERROR - Connection failed: KafkaConnectionError: DNS Resolution failure
+2026-11-04 13:00:52,697 - ERROR - <KafkaConnection node_id=1 broker_version=(3, 3) (disconnected)>: Connection lost: KafkaConnectionError: DNS Resolution failure
+2026-11-04 13:00:52,697 - WARNING - Task <kafka.net.selector.Task object at 0x00000264A99FECE0> ran for 2.703s (>0.100s threshold). It is blocking the event loop -- likely a tight sync loop inside a coroutine. Other pollers will time out.
+2026-11-04 13:00:52,698 - WARNING - <Sender client_id=kafka-python-producer-1 transactional_id=None>: Got an exception when trying to find a node to send a transactional request to. Going to back off and retry: KafkaConnectionError: Node 1 not ready after 30000 ms
+2026-11-04 13:00:52,698 - WARNING - No node available for metadata refresh - backoff/retry
+2026-11-04 13:00:55,499 - INFO - Initializing connection for node_id 1 at kafka:9092 (rack=None)
+2026-11-04 13:00:58,211 - WARNING - DNS lookup failed for kafka:9092, gaierror(11001, 'getaddrinfo failed')
+2026-11-04 13:00:58,211 - ERROR - Connection failed: KafkaConnectionError: DNS Resolution failure
+2026-11-04 13:00:58,211 - ERROR - <KafkaConnection node_id=1 broker_version=(3, 3) (disconnected)>: Connection lost: KafkaConnectionError: DNS Resolution failure
+2026-11-04 13:00:58,212 - WARNING - Task <kafka.net.selector.Task object at 0x00000264A99FF670> ran for 2.718s (>0.100s threshold). It is blocking the event loop -- likely a tight sync loop inside a coroutine. Other pollers will time out.
+2026-11-04 13:00:58,212 - WARNING - <Sender client_id=kafka-python-producer-1 transactional_id=None>: Got an exception when trying to find a node to send a transactional request to. Going to back off and retry: KafkaConnectionError: Node 1 not ready after 30000 ms
+2026-11-04 13:00:58,213 - WARNING - No node available for metadata refresh - backoff/retry
+2026-11-04 13:01:03,456 - INFO - Initializing connection for node_id 1 at kafka:9092 (rack=None)
+2026-11-04 13:01:06,157 - WARNING - DNS lookup failed for kafka:9092, gaierror(11001, 'getaddrinfo failed')
+2026-11-04 13:01:06,157 - ERROR - Connection failed: KafkaConnectionError: DNS Resolution failure
+2026-11-04 13:01:06,158 - ERROR - <KafkaConnection node_id=1 broker_version=(3, 3) (disconnected)>: Connection lost: KafkaConnectionError: DNS Resolution failure
+2026-11-04 13:01:06,158 - WARNING - Task <kafka.net.selector.Task object at 0x00000264A99FF580> ran for 2.703s (>0.100s threshold). It is blocking the event loop -- likely a tight sync loop inside a coroutine. Other pollers will time out.
+2026-11-04 13:01:06,158 - WARNING - <Sender client_id=kafka-python-producer-1 transactional_id=None>: Got an exception when trying to find a node to send a transactional request to. Going to back off and retry: KafkaConnectionError: Node 1 not ready after 30000 ms
+2026-11-04 13:01:06,159 - WARNING - No node available for metadata refresh - backoff/retry
+2026-11-04 13:01:18,082 - INFO - Initializing connection for node_id 1 at kafka:9092 (rack=None)
+2026-11-04 13:01:20,782 - WARNING - DNS lookup failed for kafka:9092, gaierror(11001, 'getaddrinfo failed')
+2026-11-04 13:01:20,782 - ERROR - Connection failed: KafkaConnectionError: DNS Resolution failure
+2026-11-04 13:01:20,782 - ERROR - <KafkaConnection node_id=1 broker_version=(3, 3) (disconnected)>: Connection lost: KafkaConnectionError: DNS Resolution failure
+2026-11-04 13:01:20,783 - WARNING - Task <kafka.net.selector.Task object at 0x00000264A99FF0A0> ran for 2.703s (>0.100s threshold). It is blocking the event loop -- likely a tight sync loop inside a coroutine. Other pollers will time out.
+2026-11-04 13:01:20,783 - WARNING - <Sender client_id=kafka-python-producer-1 transactional_id=None>: Got an exception when trying to find a node to send a transactional request to. Going to back off and retry: KafkaConnectionError: Node 1 not ready after 30000 ms
+2026-11-04 13:01:20,784 - WARNING - No node available for metadata refresh - backoff/retry
+2026-11-04 13:01:32,633 - INFO - Stopping metadata refresh loop
+2026-11-04 13:05:29,515 - INFO - Attempting bootstrap to bootstrap-0 at localhost:9092 (rack None)
+2026-11-04 13:05:29,515 - INFO - Initializing connection for node_id bootstrap-0 at localhost:9092 (rack=None)
+2026-11-04 13:05:29,522 - INFO - <KafkaTCPTransport [::1:9092<-57238]>: connected to <socket.socket fd=888, family=AddressFamily.AF_INET6, type=SocketKind.SOCK_STREAM, proto=0, laddr=('::1', 57238, 0, 0), raddr=('::1', 9092, 0, 0)>
+2026-11-04 13:05:29,542 - INFO - <KafkaConnection node_id=bootstrap-0 host=[::1:9092<-57238] broker_version=unknown (initializing)>: Broker version identified as 3.3
+2026-11-04 13:05:29,542 - INFO - <KafkaConnection node_id=bootstrap-0 host=[::1:9092<-57238] broker_version=(3, 3) (connected)>: Connected
+2026-11-04 13:05:29,551 - INFO - Updated metadata: ClusterMetadata(brokers: 1, topics: 0, coordinators: 0)
+2026-11-04 13:05:29,552 - INFO - Bootstrap complete: ClusterMetadata(brokers: 1, topics: 0, coordinators: 0)
+2026-11-04 13:05:29,552 - INFO - Closing bootstrap connection bootstrap-0
+2026-11-04 13:05:29,552 - INFO - <KafkaTCPTransport [::1:9092<-57238]>: Closing transport
+2026-11-04 13:05:29,552 - INFO - <KafkaConnection node_id=bootstrap-0 broker_version=(3, 3) (disconnected)>: Connection closed
+2026-11-04 13:05:29,552 - INFO - Starting metadata refresh loop
+2026-11-04 13:05:29,552 - INFO - <KafkaProducer client_id=kafka-python-producer-1 transactional_id=None>: Instantiated an idempotent producer.
+2026-11-04 13:05:29,555 - INFO - ProducerId set to -1 with epoch -1
+2026-11-04 13:05:29,555 - INFO - Initializing connection for node_id 1 at kafka:9092 (rack=None)
+2026-11-04 13:05:29,998 - INFO - Successfully fetched data for AAPL
+2026-11-04 13:05:30,406 - INFO - Successfully fetched data for GOOGL
+2026-11-04 13:05:30,761 - INFO - Successfully fetched data for MSFT
+2026-11-04 13:05:31,149 - INFO - Successfully fetched data for AMZN
+2026-11-04 13:05:31,514 - INFO - Successfully fetched data for TSLA
+2026-11-04 13:05:32,270 - WARNING - DNS lookup failed for kafka:9092, gaierror(11001, 'getaddrinfo failed')
+2026-11-04 13:05:32,271 - ERROR - Connection failed: KafkaConnectionError: DNS Resolution failure
+2026-11-04 13:05:32,271 - ERROR - <KafkaConnection node_id=1 broker_version=(3, 3) (disconnected)>: Connection lost: KafkaConnectionError: DNS Resolution failure
+2026-11-04 13:05:32,271 - WARNING - Task <kafka.net.selector.Task object at 0x000001D1C4752380> ran for 2.719s (>0.100s threshold). It is blocking the event loop -- likely a tight sync loop inside a coroutine. Other pollers will time out.
+2026-11-04 13:05:32,272 - WARNING - <Sender client_id=kafka-python-producer-1 transactional_id=None>: Got an exception when trying to find a node to send a transactional request to. Going to back off and retry: KafkaConnectionError: Node 1 not ready after 30000 ms
+2026-11-04 13:05:32,272 - WARNING - No node available for metadata refresh - backoff/retry
+2026-11-04 13:05:32,333 - INFO - Initializing connection for node_id 1 at kafka:9092 (rack=None)
+2026-11-04 13:05:35,020 - WARNING - DNS lookup failed for kafka:9092, gaierror(11001, 'getaddrinfo failed')
+2026-11-04 13:05:35,020 - ERROR - Connection failed: KafkaConnectionError: DNS Resolution failure
+2026-11-04 13:05:35,021 - ERROR - <KafkaConnection node_id=1 broker_version=(3, 3) (disconnected)>: Connection lost: KafkaConnectionError: DNS Resolution failure
+2026-11-04 13:05:35,021 - WARNING - Task <kafka.net.selector.Task object at 0x000001D1C4751750> ran for 2.688s (>0.100s threshold). It is blocking the event loop -- likely a tight sync loop inside a coroutine. Other pollers will time out.
+2026-11-04 13:05:35,021 - ERROR - Metadata refresh: failed KafkaConnectionError: DNS Resolution failure
+2026-11-04 13:05:35,129 - INFO - Initializing connection for node_id 1 at kafka:9092 (rack=None)
+2026-11-04 13:05:37,828 - WARNING - DNS lookup failed for kafka:9092, gaierror(11001, 'getaddrinfo failed')
+2026-11-04 13:05:37,828 - ERROR - Connection failed: KafkaConnectionError: DNS Resolution failure
+2026-11-04 13:05:37,829 - ERROR - <KafkaConnection node_id=1 broker_version=(3, 3) (disconnected)>: Connection lost: KafkaConnectionError: DNS Resolution failure
+2026-11-04 13:05:37,829 - WARNING - Task <kafka.net.selector.Task object at 0x000001D1C4752560> ran for 2.688s (>0.100s threshold). It is blocking the event loop -- likely a tight sync loop inside a coroutine. Other pollers will time out.
+2026-11-04 13:05:37,829 - WARNING - <Sender client_id=kafka-python-producer-1 transactional_id=None>: Got an exception when trying to find a node to send a transactional request to. Going to back off and retry: KafkaConnectionError: Node 1 not ready after 30000 ms
+2026-11-04 13:05:37,830 - ERROR - Metadata refresh: failed KafkaConnectionError: DNS Resolution failure
+2026-11-04 13:05:37,953 - WARNING - No node available for metadata refresh - backoff/retry
+2026-11-04 13:05:38,015 - INFO - Initializing connection for node_id 1 at kafka:9092 (rack=None)
+2026-11-04 13:05:40,728 - WARNING - DNS lookup failed for kafka:9092, gaierror(11001, 'getaddrinfo failed')
+2026-11-04 13:05:40,728 - ERROR - Connection failed: KafkaConnectionError: DNS Resolution failure
+2026-11-04 13:05:40,728 - ERROR - <KafkaConnection node_id=1 broker_version=(3, 3) (disconnected)>: Connection lost: KafkaConnectionError: DNS Resolution failure
+2026-11-04 13:05:40,729 - WARNING - Task <kafka.net.selector.Task object at 0x000001D1C4752DA0> ran for 2.719s (>0.100s threshold). It is blocking the event loop -- likely a tight sync loop inside a coroutine. Other pollers will time out.
+2026-11-04 13:05:40,729 - ERROR - Metadata refresh: failed KafkaConnectionError: DNS Resolution failure
+2026-11-04 13:05:40,836 - WARNING - No node available for metadata refresh - backoff/retry
+2026-11-04 13:05:40,898 - WARNING - No node available for metadata refresh - backoff/retry
+2026-11-04 13:05:40,991 - WARNING - No node available for metadata refresh - backoff/retry
+2026-11-04 13:05:41,162 - INFO - Initializing connection for node_id 1 at kafka:9092 (rack=None)
+2026-11-04 13:05:43,866 - WARNING - DNS lookup failed for kafka:9092, gaierror(11001, 'getaddrinfo failed')
+2026-11-04 13:05:43,867 - ERROR - Connection failed: KafkaConnectionError: DNS Resolution failure
+2026-11-04 13:05:43,867 - ERROR - <KafkaConnection node_id=1 broker_version=(3, 3) (disconnected)>: Connection lost: KafkaConnectionError: DNS Resolution failure
+2026-11-04 13:05:43,867 - WARNING - Task <kafka.net.selector.Task object at 0x000001D1C47536D0> ran for 2.704s (>0.100s threshold). It is blocking the event loop -- likely a tight sync loop inside a coroutine. Other pollers will time out.
+2026-11-04 13:05:43,867 - WARNING - <Sender client_id=kafka-python-producer-1 transactional_id=None>: Got an exception when trying to find a node to send a transactional request to. Going to back off and retry: KafkaConnectionError: Node 1 not ready after 30000 ms
+2026-11-04 13:05:43,868 - ERROR - Metadata refresh: failed KafkaConnectionError: DNS Resolution failure
+2026-11-04 13:05:43,976 - WARNING - No node available for metadata refresh - backoff/retry
+2026-11-04 13:05:44,023 - WARNING - No node available for metadata refresh - backoff/retry
+2026-11-04 13:05:44,148 - WARNING - No node available for metadata refresh - backoff/retry
+2026-11-04 13:05:44,403 - WARNING - No node available for metadata refresh - backoff/retry
+2026-11-04 13:05:44,641 - INFO - Initializing connection for node_id 1 at kafka:9092 (rack=None)
+2026-11-04 13:05:47,331 - WARNING - DNS lookup failed for kafka:9092, gaierror(11001, 'getaddrinfo failed')
+2026-11-04 13:05:47,331 - ERROR - Connection failed: KafkaConnectionError: DNS Resolution failure
+2026-11-04 13:05:47,331 - ERROR - <KafkaConnection node_id=1 broker_version=(3, 3) (disconnected)>: Connection lost: KafkaConnectionError: DNS Resolution failure
+2026-11-04 13:05:47,332 - WARNING - Task <kafka.net.selector.Task object at 0x000001D1C4751840> ran for 2.703s (>0.100s threshold). It is blocking the event loop -- likely a tight sync loop inside a coroutine. Other pollers will time out.
+2026-11-04 13:05:47,332 - WARNING - <Sender client_id=kafka-python-producer-1 transactional_id=None>: Got an exception when trying to find a node to send a transactional request to. Going to back off and retry: KafkaConnectionError: Node 1 not ready after 30000 ms
+2026-11-04 13:05:47,332 - WARNING - No node available for metadata refresh - backoff/retry
+2026-11-04 13:05:48,111 - WARNING - No node available for metadata refresh - backoff/retry
+2026-11-04 13:05:48,876 - INFO - Initializing connection for node_id 1 at kafka:9092 (rack=None)
+2026-11-04 13:05:51,578 - WARNING - DNS lookup failed for kafka:9092, gaierror(11001, 'getaddrinfo failed')
+2026-11-04 13:05:51,579 - ERROR - Connection failed: KafkaConnectionError: DNS Resolution failure
+2026-11-04 13:05:51,579 - ERROR - <KafkaConnection node_id=1 broker_version=(3, 3) (disconnected)>: Connection lost: KafkaConnectionError: DNS Resolution failure
+2026-11-04 13:05:51,579 - WARNING - Task <kafka.net.selector.Task object at 0x000001D1C4752DA0> ran for 2.688s (>0.100s threshold). It is blocking the event loop -- likely a tight sync loop inside a coroutine. Other pollers will time out.
+2026-11-04 13:05:51,579 - WARNING - <Sender client_id=kafka-python-producer-1 transactional_id=None>: Got an exception when trying to find a node to send a transactional request to. Going to back off and retry: KafkaConnectionError: Node 1 not ready after 30000 ms
+2026-11-04 13:05:51,580 - WARNING - No node available for metadata refresh - backoff/retry
+2026-11-04 13:05:54,549 - INFO - Initializing connection for node_id 1 at kafka:9092 (rack=None)
+2026-11-04 13:05:57,238 - WARNING - DNS lookup failed for kafka:9092, gaierror(11001, 'getaddrinfo failed')
+2026-11-04 13:05:57,239 - ERROR - Connection failed: KafkaConnectionError: DNS Resolution failure
+2026-11-04 13:05:57,239 - ERROR - <KafkaConnection node_id=1 broker_version=(3, 3) (disconnected)>: Connection lost: KafkaConnectionError: DNS Resolution failure
+2026-11-04 13:05:57,239 - WARNING - Task <kafka.net.selector.Task object at 0x000001D1C4751F60> ran for 2.688s (>0.100s threshold). It is blocking the event loop -- likely a tight sync loop inside a coroutine. Other pollers will time out.
+2026-11-04 13:05:57,239 - WARNING - <Sender client_id=kafka-python-producer-1 transactional_id=None>: Got an exception when trying to find a node to send a transactional request to. Going to back off and retry: KafkaConnectionError: Node 1 not ready after 30000 ms
+2026-11-04 13:05:57,241 - WARNING - No node available for metadata refresh - backoff/retry
+2026-11-04 13:06:03,391 - WARNING - No node available for metadata refresh - backoff/retry
+2026-11-04 13:06:03,876 - INFO - Initializing connection for node_id 1 at kafka:9092 (rack=None)
+2026-11-04 13:06:06,577 - WARNING - DNS lookup failed for kafka:9092, gaierror(11001, 'getaddrinfo failed')
+2026-11-04 13:06:06,578 - ERROR - Connection failed: KafkaConnectionError: DNS Resolution failure
+2026-11-04 13:06:06,578 - ERROR - <KafkaConnection node_id=1 broker_version=(3, 3) (disconnected)>: Connection lost: KafkaConnectionError: DNS Resolution failure
+2026-11-04 13:06:06,579 - WARNING - Task <kafka.net.selector.Task object at 0x000001D1C4751840> ran for 2.703s (>0.100s threshold). It is blocking the event loop -- likely a tight sync loop inside a coroutine. Other pollers will time out.
+2026-11-04 13:06:06,579 - WARNING - <Sender client_id=kafka-python-producer-1 transactional_id=None>: Got an exception when trying to find a node to send a transactional request to. Going to back off and retry: KafkaConnectionError: Node 1 not ready after 30000 ms
+2026-11-04 13:06:16,491 - WARNING - No node available for metadata refresh - backoff/retry
+2026-11-04 13:06:20,949 - INFO - Initializing connection for node_id 1 at kafka:9092 (rack=None)
+2026-11-04 13:06:23,661 - WARNING - DNS lookup failed for kafka:9092, gaierror(11001, 'getaddrinfo failed')
+2026-11-04 13:06:23,661 - ERROR - Connection failed: KafkaConnectionError: DNS Resolution failure
+2026-11-04 13:06:23,662 - ERROR - <KafkaConnection node_id=1 broker_version=(3, 3) (disconnected)>: Connection lost: KafkaConnectionError: DNS Resolution failure
+2026-11-04 13:06:23,662 - WARNING - Task <kafka.net.selector.Task object at 0x000001D1C4753430> ran for 2.718s (>0.100s threshold). It is blocking the event loop -- likely a tight sync loop inside a coroutine. Other pollers will time out.
+2026-11-04 13:06:23,662 - WARNING - <Sender client_id=kafka-python-producer-1 transactional_id=None>: Got an exception when trying to find a node to send a transactional request to. Going to back off and retry: KafkaConnectionError: Node 1 not ready after 30000 ms
+2026-11-04 13:06:31,673 - INFO - Stopping metadata refresh loop
+2026-11-04 13:17:52,523 - INFO - Attempting bootstrap to bootstrap-0 at localhost:9092 (rack None)
+2026-11-04 13:17:52,523 - INFO - Initializing connection for node_id bootstrap-0 at localhost:9092 (rack=None)
+2026-11-04 13:17:52,531 - INFO - <KafkaTCPTransport [::1:9092<-62394]>: connected to <socket.socket fd=968, family=AddressFamily.AF_INET6, type=SocketKind.SOCK_STREAM, proto=0, laddr=('::1', 62394, 0, 0), raddr=('::1', 9092, 0, 0)>
+2026-11-04 13:17:52,546 - INFO - <KafkaConnection node_id=bootstrap-0 host=[::1:9092<-62394] broker_version=unknown (initializing)>: Broker version identified as 3.3
+2026-11-04 13:17:52,547 - INFO - <KafkaConnection node_id=bootstrap-0 host=[::1:9092<-62394] broker_version=(3, 3) (connected)>: Connected
+2026-11-04 13:17:52,553 - INFO - Updated metadata: ClusterMetadata(brokers: 1, topics: 0, coordinators: 0)
+2026-11-04 13:17:52,553 - INFO - Bootstrap complete: ClusterMetadata(brokers: 1, topics: 0, coordinators: 0)
+2026-11-04 13:17:52,553 - INFO - Closing bootstrap connection bootstrap-0
+2026-11-04 13:17:52,555 - INFO - <KafkaTCPTransport [::1:9092<-62394]>: Closing transport
+2026-11-04 13:17:52,555 - INFO - <KafkaConnection node_id=bootstrap-0 broker_version=(3, 3) (disconnected)>: Connection closed
+2026-11-04 13:17:52,555 - INFO - Starting metadata refresh loop
+2026-11-04 13:17:52,556 - INFO - <KafkaProducer client_id=kafka-python-producer-1 transactional_id=None>: Instantiated an idempotent producer.
+2026-11-04 13:17:52,558 - INFO - ProducerId set to -1 with epoch -1
+2026-11-04 13:17:52,559 - INFO - Initializing connection for node_id 1 at kafka:9092 (rack=None)
+2026-11-04 13:17:53,000 - INFO - Successfully fetched data for AAPL
+2026-11-04 13:17:53,382 - INFO - Successfully fetched data for GOOGL
+2026-11-04 13:17:53,708 - INFO - Successfully fetched data for MSFT
+2026-11-04 13:17:54,015 - INFO - Successfully fetched data for AMZN
+2026-11-04 13:17:54,334 - INFO - Successfully fetched data for TSLA
+2026-11-04 13:17:55,278 - WARNING - DNS lookup failed for kafka:9092, gaierror(11001, 'getaddrinfo failed')
+2026-11-04 13:17:55,278 - ERROR - Connection failed: KafkaConnectionError: DNS Resolution failure
+2026-11-04 13:17:55,280 - ERROR - <KafkaConnection node_id=1 broker_version=(3, 3) (disconnected)>: Connection lost: KafkaConnectionError: DNS Resolution failure
+2026-11-04 13:17:55,281 - WARNING - Task <kafka.net.selector.Task object at 0x0000021CFCAA9C90> ran for 2.719s (>0.100s threshold). It is blocking the event loop -- likely a tight sync loop inside a coroutine. Other pollers will time out.
+2026-11-04 13:17:55,281 - WARNING - <Sender client_id=kafka-python-producer-1 transactional_id=None>: Got an exception when trying to find a node to send a transactional request to. Going to back off and retry: KafkaConnectionError: Node 1 not ready after 30000 ms
+2026-11-04 13:17:55,282 - WARNING - No node available for metadata refresh - backoff/retry
+2026-11-04 13:17:55,341 - INFO - Initializing connection for node_id 1 at kafka:9092 (rack=None)
+2026-11-04 13:17:58,042 - WARNING - DNS lookup failed for kafka:9092, gaierror(11001, 'getaddrinfo failed')
+2026-11-04 13:17:58,043 - ERROR - Connection failed: KafkaConnectionError: DNS Resolution failure
+2026-11-04 13:17:58,043 - ERROR - <KafkaConnection node_id=1 broker_version=(3, 3) (disconnected)>: Connection lost: KafkaConnectionError: DNS Resolution failure
+2026-11-04 13:17:58,043 - WARNING - Task <kafka.net.selector.Task object at 0x0000021CFCAAA950> ran for 2.703s (>0.100s threshold). It is blocking the event loop -- likely a tight sync loop inside a coroutine. Other pollers will time out.
+2026-11-04 13:17:58,044 - ERROR - Metadata refresh: failed KafkaConnectionError: DNS Resolution failure
+2026-11-04 13:17:58,150 - INFO - Initializing connection for node_id 1 at kafka:9092 (rack=None)
+2026-11-04 13:18:00,851 - WARNING - DNS lookup failed for kafka:9092, gaierror(11001, 'getaddrinfo failed')
+2026-11-04 13:18:00,852 - ERROR - Connection failed: KafkaConnectionError: DNS Resolution failure
+2026-11-04 13:18:00,852 - ERROR - <KafkaConnection node_id=1 broker_version=(3, 3) (disconnected)>: Connection lost: KafkaConnectionError: DNS Resolution failure
+2026-11-04 13:18:00,853 - WARNING - Task <kafka.net.selector.Task object at 0x0000021CFCAA9AB0> ran for 2.703s (>0.100s threshold). It is blocking the event loop -- likely a tight sync loop inside a coroutine. Other pollers will time out.
+2026-11-04 13:18:00,853 - WARNING - <Sender client_id=kafka-python-producer-1 transactional_id=None>: Got an exception when trying to find a node to send a transactional request to. Going to back off and retry: KafkaConnectionError: Node 1 not ready after 30000 ms
+2026-11-04 13:18:00,853 - ERROR - Metadata refresh: failed KafkaConnectionError: DNS Resolution failure
+2026-11-04 13:18:00,961 - WARNING - No node available for metadata refresh - backoff/retry
+2026-11-04 13:18:01,008 - WARNING - No node available for metadata refresh - backoff/retry
+2026-11-04 13:18:01,071 - INFO - Initializing connection for node_id 1 at kafka:9092 (rack=None)
+2026-11-04 13:18:03,783 - WARNING - DNS lookup failed for kafka:9092, gaierror(11001, 'getaddrinfo failed')
+2026-11-04 13:18:03,784 - ERROR - Connection failed: KafkaConnectionError: DNS Resolution failure
+2026-11-04 13:18:03,784 - ERROR - <KafkaConnection node_id=1 broker_version=(3, 3) (disconnected)>: Connection lost: KafkaConnectionError: DNS Resolution failure
+2026-11-04 13:18:03,785 - WARNING - Task <kafka.net.selector.Task object at 0x0000021CFCAA8A90> ran for 2.718s (>0.100s threshold). It is blocking the event loop -- likely a tight sync loop inside a coroutine. Other pollers will time out.
+2026-11-04 13:18:03,785 - WARNING - <Sender client_id=kafka-python-producer-1 transactional_id=None>: Got an exception when trying to find a node to send a transactional request to. Going to back off and retry: KafkaConnectionError: Node 1 not ready after 30000 ms
+2026-11-04 13:18:03,785 - WARNING - No node available for metadata refresh - backoff/retry
+2026-11-04 13:18:03,968 - WARNING - No node available for metadata refresh - backoff/retry
+2026-11-04 13:18:04,251 - INFO - Initializing connection for node_id 1 at kafka:9092 (rack=None)
+2026-11-04 13:18:06,937 - WARNING - DNS lookup failed for kafka:9092, gaierror(11001, 'getaddrinfo failed')
+2026-11-04 13:18:06,938 - ERROR - Connection failed: KafkaConnectionError: DNS Resolution failure
+2026-11-04 13:18:06,938 - ERROR - <KafkaConnection node_id=1 broker_version=(3, 3) (disconnected)>: Connection lost: KafkaConnectionError: DNS Resolution failure
+2026-11-04 13:18:06,938 - WARNING - Task <kafka.net.selector.Task object at 0x0000021CFCAA9CC0> ran for 2.687s (>0.100s threshold). It is blocking the event loop -- likely a tight sync loop inside a coroutine. Other pollers will time out.
+2026-11-04 13:18:06,938 - WARNING - <Sender client_id=kafka-python-producer-1 transactional_id=None>: Got an exception when trying to find a node to send a transactional request to. Going to back off and retry: KafkaConnectionError: Node 1 not ready after 30000 ms
+2026-11-04 13:18:06,939 - WARNING - No node available for metadata refresh - backoff/retry
+2026-11-04 13:18:07,657 - WARNING - No node available for metadata refresh - backoff/retry
+2026-11-04 13:18:07,719 - INFO - Initializing connection for node_id 1 at kafka:9092 (rack=None)
+2026-11-04 13:18:10,416 - WARNING - DNS lookup failed for kafka:9092, gaierror(11001, 'getaddrinfo failed')
+2026-11-04 13:18:10,416 - ERROR - Connection failed: KafkaConnectionError: DNS Resolution failure
+2026-11-04 13:18:10,416 - ERROR - <KafkaConnection node_id=1 broker_version=(3, 3) (disconnected)>: Connection lost: KafkaConnectionError: DNS Resolution failure
+2026-11-04 13:18:10,416 - WARNING - Task <kafka.net.selector.Task object at 0x0000021CFCAA9480> ran for 2.703s (>0.100s threshold). It is blocking the event loop -- likely a tight sync loop inside a coroutine. Other pollers will time out.
+2026-11-04 13:18:10,416 - WARNING - <Sender client_id=kafka-python-producer-1 transactional_id=None>: Got an exception when trying to find a node to send a transactional request to. Going to back off and retry: KafkaConnectionError: Node 1 not ready after 30000 ms
+2026-11-04 13:18:10,417 - WARNING - No node available for metadata refresh - backoff/retry
+2026-11-04 13:18:12,054 - INFO - Initializing connection for node_id 1 at kafka:9092 (rack=None)
+2026-11-04 13:18:14,766 - WARNING - DNS lookup failed for kafka:9092, gaierror(11001, 'getaddrinfo failed')
+2026-11-04 13:18:14,766 - ERROR - Connection failed: KafkaConnectionError: DNS Resolution failure
+2026-11-04 13:18:14,766 - ERROR - <KafkaConnection node_id=1 broker_version=(3, 3) (disconnected)>: Connection lost: KafkaConnectionError: DNS Resolution failure
+2026-11-04 13:18:14,767 - WARNING - Task <kafka.net.selector.Task object at 0x0000021CFCAAA470> ran for 2.703s (>0.100s threshold). It is blocking the event loop -- likely a tight sync loop inside a coroutine. Other pollers will time out.
+2026-11-04 13:18:14,767 - WARNING - <Sender client_id=kafka-python-producer-1 transactional_id=None>: Got an exception when trying to find a node to send a transactional request to. Going to back off and retry: KafkaConnectionError: Node 1 not ready after 30000 ms
+2026-11-04 13:18:14,767 - WARNING - No node available for metadata refresh - backoff/retry
+2026-11-04 13:18:18,272 - INFO - Initializing connection for node_id 1 at kafka:9092 (rack=None)
+2026-11-04 13:18:20,986 - WARNING - DNS lookup failed for kafka:9092, gaierror(11001, 'getaddrinfo failed')
+2026-11-04 13:18:20,987 - ERROR - Connection failed: KafkaConnectionError: DNS Resolution failure
+2026-11-04 13:18:20,987 - ERROR - <KafkaConnection node_id=1 broker_version=(3, 3) (disconnected)>: Connection lost: KafkaConnectionError: DNS Resolution failure
+2026-11-04 13:18:20,988 - WARNING - Task <kafka.net.selector.Task object at 0x0000021CFCAA8F40> ran for 2.719s (>0.100s threshold). It is blocking the event loop -- likely a tight sync loop inside a coroutine. Other pollers will time out.
+2026-11-04 13:18:20,988 - WARNING - <Sender client_id=kafka-python-producer-1 transactional_id=None>: Got an exception when trying to find a node to send a transactional request to. Going to back off and retry: KafkaConnectionError: Node 1 not ready after 30000 ms
+2026-11-04 13:18:22,197 - WARNING - No node available for metadata refresh - backoff/retry
+2026-11-04 13:18:27,878 - INFO - Initializing connection for node_id 1 at kafka:9092 (rack=None)
+2026-11-04 13:18:30,603 - WARNING - DNS lookup failed for kafka:9092, gaierror(11001, 'getaddrinfo failed')
+2026-11-04 13:18:30,604 - ERROR - Connection failed: KafkaConnectionError: DNS Resolution failure
+2026-11-04 13:18:30,604 - ERROR - <KafkaConnection node_id=1 broker_version=(3, 3) (disconnected)>: Connection lost: KafkaConnectionError: DNS Resolution failure
+2026-11-04 13:18:30,605 - WARNING - Task <kafka.net.selector.Task object at 0x0000021CFCAA91B0> ran for 2.719s (>0.100s threshold). It is blocking the event loop -- likely a tight sync loop inside a coroutine. Other pollers will time out.
+2026-11-04 13:18:30,605 - WARNING - <Sender client_id=kafka-python-producer-1 transactional_id=None>: Got an exception when trying to find a node to send a transactional request to. Going to back off and retry: KafkaConnectionError: Node 1 not ready after 30000 ms
+2026-11-04 13:18:34,002 - WARNING - No node available for metadata refresh - backoff/retry
+2026-11-04 13:18:42,309 - INFO - Initializing connection for node_id 1 at kafka:9092 (rack=None)
+2026-11-04 13:18:45,012 - WARNING - DNS lookup failed for kafka:9092, gaierror(11001, 'getaddrinfo failed')
+2026-11-04 13:18:45,012 - ERROR - Connection failed: KafkaConnectionError: DNS Resolution failure
+2026-11-04 13:18:45,013 - ERROR - <KafkaConnection node_id=1 broker_version=(3, 3) (disconnected)>: Connection lost: KafkaConnectionError: DNS Resolution failure
+2026-11-04 13:18:45,013 - WARNING - Task <kafka.net.selector.Task object at 0x0000021CFCAA8D90> ran for 2.703s (>0.100s threshold). It is blocking the event loop -- likely a tight sync loop inside a coroutine. Other pollers will time out.
+2026-11-04 13:18:45,013 - WARNING - <Sender client_id=kafka-python-producer-1 transactional_id=None>: Got an exception when trying to find a node to send a transactional request to. Going to back off and retry: KafkaConnectionError: Node 1 not ready after 30000 ms
+2026-11-04 13:18:54,530 - INFO - Stopping metadata refresh loop
+2026-11-04 13:27:39,263 - INFO - Attempting bootstrap to bootstrap-0 at localhost:9094 (rack None)
+2026-11-04 13:27:39,264 - INFO - Initializing connection for node_id bootstrap-0 at localhost:9094 (rack=None)
+2026-11-04 13:27:39,269 - INFO - <KafkaTCPTransport [::1:9094<-57180]>: connected to <socket.socket fd=876, family=AddressFamily.AF_INET6, type=SocketKind.SOCK_STREAM, proto=0, laddr=('::1', 57180, 0, 0), raddr=('::1', 9094, 0, 0)>
+2026-11-04 13:27:39,329 - INFO - <KafkaConnection node_id=bootstrap-0 host=[::1:9094<-57180] broker_version=unknown (initializing)>: Broker version identified as 3.3
+2026-11-04 13:27:39,329 - INFO - <KafkaConnection node_id=bootstrap-0 host=[::1:9094<-57180] broker_version=(3, 3) (connected)>: Connected
+2026-11-04 13:27:39,338 - INFO - Updated metadata: ClusterMetadata(brokers: 1, topics: 0, coordinators: 0)
+2026-11-04 13:27:39,338 - INFO - Bootstrap complete: ClusterMetadata(brokers: 1, topics: 0, coordinators: 0)
+2026-11-04 13:27:39,338 - INFO - Closing bootstrap connection bootstrap-0
+2026-11-04 13:27:39,338 - INFO - <KafkaTCPTransport [::1:9094<-57180]>: Closing transport
+2026-11-04 13:27:39,338 - INFO - <KafkaConnection node_id=bootstrap-0 broker_version=(3, 3) (disconnected)>: Connection closed
+2026-11-04 13:27:39,338 - INFO - Starting metadata refresh loop
+2026-11-04 13:27:39,339 - INFO - <KafkaProducer client_id=kafka-python-producer-1 transactional_id=None>: Instantiated an idempotent producer.
+2026-11-04 13:27:39,340 - INFO - ProducerId set to -1 with epoch -1
+2026-11-04 13:27:39,341 - INFO - Initializing connection for node_id 1 at localhost:9094 (rack=None)
+2026-11-04 13:27:39,343 - INFO - <KafkaTCPTransport [::1:9094<-57181]>: connected to <socket.socket fd=1016, family=AddressFamily.AF_INET6, type=SocketKind.SOCK_STREAM, proto=0, laddr=('::1', 57181, 0, 0), raddr=('::1', 9094, 0, 0)>
+2026-11-04 13:27:39,383 - INFO - <KafkaConnection node_id=1 host=[::1:9094<-57181] broker_version=(3, 3) (connected)>: Connected
+2026-11-04 13:27:39,565 - INFO - ProducerId set to 0 with epoch 0
+2026-11-04 13:27:39,774 - INFO - Successfully fetched data for AAPL
+2026-11-04 13:27:40,185 - INFO - Successfully fetched data for GOOGL
+2026-11-04 13:27:40,512 - INFO - Successfully fetched data for MSFT
+2026-11-04 13:27:40,824 - INFO - Successfully fetched data for AMZN
+2026-11-04 13:27:41,150 - INFO - Successfully fetched data for TSLA
+2026-11-04 13:27:41,238 - ERROR - Topic stock_analysis not found in cluster metadata
+2026-11-04 13:27:41,238 - INFO - Updated metadata: ClusterMetadata(brokers: 1, topics: 0, coordinators: 0)
+2026-11-04 13:27:41,360 - ERROR - Topic stock_analysis not found in cluster metadata
+2026-11-04 13:27:41,360 - INFO - Updated metadata: ClusterMetadata(brokers: 1, topics: 0, coordinators: 0)
+2026-11-04 13:27:41,472 - INFO - Updated metadata: ClusterMetadata(brokers: 1, topics: 1, coordinators: 0)
+2026-11-04 13:32:41,489 - INFO - Updated metadata: ClusterMetadata(brokers: 1, topics: 1, coordinators: 0)
+2026-11-04 13:37:41,755 - INFO - Updated metadata: ClusterMetadata(brokers: 1, topics: 1, coordinators: 0)
+2026-11-04 13:42:28,565 - INFO - <KafkaTCPTransport [::1:9094<-57181]>: Closing transport
+2026-11-04 13:42:28,567 - INFO - <KafkaConnection node_id=1 broker_version=(3, 3) (disconnected)>: Connection closed
+2026-11-04 13:42:28,569 - INFO - Stopping metadata refresh loop
