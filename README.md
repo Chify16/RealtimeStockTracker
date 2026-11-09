@@ -3,6 +3,7 @@ A containerised, end-to-end streaming data pipeline that pulls intraday stock pr
 Built as a hands-on project for MarketPulse Analytics, a (fictional) New York-based financial analytics firm.
 
 Table of Contents
+
 Project Introduction
 Business Problem
 Key Features
